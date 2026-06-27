@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: task-manager-api
+    env: ruby
+    buildCommand: bundle install && bin/rails db:migrate
+    startCommand: bin/rails server -p $PORT -e production
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: SECRET_KEY_BASE
+        generateValue: true
