@@ -144,7 +144,7 @@ function App() {
                 <div style={{ fontSize: 13, color: "#888" }}>{task.description}</div>
               )}
               {task.deadline && (
-                <div style={{ fontSize: 12, color: "#e67e22" }}>⏰ {formatDeadline(task.deadline)}</div>
+                <div style={{ fontSize: 12, color: "#e67e22" }}> {formatDeadline(task.deadline)}</div>
               )}
             </div>
           </div>
