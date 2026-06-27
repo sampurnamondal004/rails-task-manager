@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API = "http://127.0.0.1:3000/api/v1/tasks";
+const API = "https://rails-task-manager-ypur.onrender.com/api/v1/tasks";
 
 function App() {
   const [tasks, setTasks] = useState([]);
